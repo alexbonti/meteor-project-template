@@ -153,3 +153,8 @@ Template.registerHelper('isAdmin', function() {
     }
     return false;
 });
+
+
+Handlebars.registerHelper('lostConnection', function() {
+    return Session.get('lostConnection');
+});

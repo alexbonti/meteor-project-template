@@ -10,6 +10,13 @@
 <template name="layout">
 	{{!-- The main layout template --}}
 
+	{{#if lostConnection}}
+		{{>connecting}}
+	{{/if}}
+
+	{{> notifications}}
+
+
 	{{#if currentUser}}
 		{{!-- if the user is logged in show the header and main yield --}}
 		<div class="container">
