@@ -1,5 +1,22 @@
 {
   "generate" : {
+    "login":{
+      "default" : {
+        "desc" : "Login, a standard login view using account package",
+        "variables" : [
+          {
+            "name" : "viewName",
+            "desc" : "What's the name of your login view?"
+          }
+        ],
+        "files" : [
+          "private/orion/modules/login/view.html",
+          "private/orion/modules/login/view.js",
+          "private/orion/modules/login/view.less"
+        ]
+      }
+
+    },
     "view" : {
       "default" : {
         "desc" : "Views, used with routes for displaying content",
